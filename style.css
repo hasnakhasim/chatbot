@@ -1,0 +1,800 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #f5f7fb;
+
+    color: #1f2937;
+
+    height: 100vh;
+
+}
+
+
+/* =====================================
+   MAIN APP
+===================================== */
+
+.app-container {
+
+    display: flex;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar {
+
+    width: 290px;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 25px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding-bottom: 25px;
+
+    border-bottom:
+        1px solid #374151;
+
+}
+
+
+.logo-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    background: #2563eb;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+}
+
+
+.logo h2 {
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+}
+
+
+.logo span {
+
+    font-size: 12px;
+
+    color: #9ca3af;
+
+}
+
+
+/* =====================================
+   SIDEBAR SECTION
+===================================== */
+
+.sidebar-section {
+
+    margin-top: 30px;
+
+}
+
+
+.sidebar-section h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    color: #d1d5db;
+
+}
+
+
+.sidebar-section label {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: #9ca3af;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.sidebar-section input,
+.sidebar-section select {
+
+    width: 100%;
+
+    padding: 10px 11px;
+
+    background: #1f2937;
+
+    border: 1px solid #374151;
+
+    border-radius: 7px;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 13px;
+
+}
+
+
+.sidebar-section input:focus,
+.sidebar-section select:focus {
+
+    border-color: #3b82f6;
+
+}
+
+
+.sidebar-section input::placeholder {
+
+    color: #6b7280;
+
+}
+
+
+/* =====================================
+   SIDEBAR BOTTOM
+===================================== */
+
+.sidebar-bottom {
+
+    margin-top: auto;
+
+    padding: 15px;
+
+    background: #1f2937;
+
+    border-radius: 10px;
+
+}
+
+
+.sidebar-bottom p {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+}
+
+
+.sidebar-bottom span {
+
+    font-size: 12px;
+
+    color: #9ca3af;
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.main-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.chat-header {
+
+    height: 80px;
+
+    background: white;
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.chat-header h1 {
+
+    font-size: 20px;
+
+    color: #111827;
+
+}
+
+
+.chat-header p {
+
+    font-size: 13px;
+
+    color: #6b7280;
+
+    margin-top: 4px;
+
+}
+
+
+.status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 13px;
+
+    color: #16a34a;
+
+}
+
+
+.status-dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+
+}
+
+
+/* =====================================
+   MESSAGES
+===================================== */
+
+.messages {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    max-width: 1000px;
+
+    width: 100%;
+
+    margin: auto;
+
+}
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+.message {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+    max-width: 850px;
+
+}
+
+
+.ai-message {
+
+    align-self: flex-start;
+
+}
+
+
+.user-message {
+
+    margin-left: auto;
+
+    justify-content: flex-end;
+
+}
+
+
+/* =====================================
+   AVATAR
+===================================== */
+
+.avatar {
+
+    width: 38px;
+
+    height: 38px;
+
+    min-width: 38px;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+}
+
+
+.user-avatar {
+
+    background: #e5e7eb;
+
+}
+
+
+/* =====================================
+   MESSAGE CONTENT
+===================================== */
+
+.message-content {
+
+    max-width: 720px;
+
+}
+
+
+.message-name {
+
+    font-size: 12px;
+
+    color: #6b7280;
+
+    margin-bottom: 6px;
+
+    font-weight: 600;
+
+}
+
+
+.message-text {
+
+    background: white;
+
+    padding: 14px 17px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.03);
+
+}
+
+
+.user-message .message-text {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+}
+
+
+/* =====================================
+   SUGGESTIONS
+===================================== */
+
+.suggestions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-left: 50px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.suggestions button {
+
+    background: white;
+
+    border: 1px solid #dbe2ea;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    color: #374151;
+
+    transition: 0.2s;
+
+}
+
+
+.suggestions button:hover {
+
+    border-color: #2563eb;
+
+    color: #2563eb;
+
+    background: #eff6ff;
+
+}
+
+
+/* =====================================
+   INPUT AREA
+===================================== */
+
+.input-container {
+
+    background: white;
+
+    border-top:
+        1px solid #e5e7eb;
+
+    padding: 18px 30px;
+
+}
+
+
+.input-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+#message {
+
+    flex: 1;
+
+    padding: 13px 15px;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+
+}
+
+
+#message:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            37,
+            99,
+            235,
+            0.1
+        );
+
+}
+
+
+#sendButton {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 0 20px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.2s;
+
+}
+
+
+#sendButton:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+#sendButton:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+.input-hint {
+
+    max-width: 900px;
+
+    margin: 7px auto 0;
+
+    font-size: 11px;
+
+    color: #9ca3af;
+
+}
+
+
+/* =====================================
+   TYPING ANIMATION
+===================================== */
+
+.typing {
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    padding: 13px 16px;
+
+    display: flex;
+
+    gap: 4px;
+
+    width: fit-content;
+
+}
+
+
+.typing span {
+
+    width: 6px;
+
+    height: 6px;
+
+    background: #9ca3af;
+
+    border-radius: 50%;
+
+    animation:
+        typing 1.2s infinite;
+
+}
+
+
+.typing span:nth-child(2) {
+
+    animation-delay: 0.2s;
+
+}
+
+
+.typing span:nth-child(3) {
+
+    animation-delay: 0.4s;
+
+}
+
+
+@keyframes typing {
+
+    0%,
+    60%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    30% {
+
+        transform: translateY(-5px);
+
+    }
+
+}
+
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+.messages::-webkit-scrollbar {
+
+    width: 6px;
+
+}
+
+
+.messages::-webkit-scrollbar-thumb {
+
+    background: #d1d5db;
+
+    border-radius: 10px;
+
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+
+        display: none;
+
+    }
+
+    .chat-header {
+
+        padding: 0 18px;
+
+    }
+
+    .messages {
+
+        padding: 20px 15px;
+
+    }
+
+    .input-container {
+
+        padding: 15px;
+
+    }
+
+    .suggestions {
+
+        margin-left: 0;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .chat-header h1 {
+
+        font-size: 17px;
+
+    }
+
+    .chat-header p {
+
+        display: none;
+
+    }
+
+    .status {
+
+        font-size: 11px;
+
+    }
+
+    #sendButton span {
+
+        display: none;
+
+    }
+
+    #sendButton {
+
+        padding: 0 15px;
+
+    }
+
+}
